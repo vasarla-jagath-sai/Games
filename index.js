@@ -6,7 +6,15 @@ function mainfunc(){
 }
 function output_coin(){
     var num=Math.floor((Math.random()*90)+1);
-    if(prev_array.indexOf(num)==-1){
+    if(prev_array.length==90){
+         ne = confirm("Game ended click ok to play again");
+        
+        if(ne==true){
+            
+            location.reload();
+        }
+    }
+    else if(prev_array.indexOf(num)==-1){
         if(prev_array.length>0){
             document.getElementById("prevval").value=prev_array[(prev_array.length)-1];
         }
@@ -30,14 +38,7 @@ function output_coin(){
     else{
         output_coin();
     }  
-    if(prev_array.length==90){
-         ne = confirm("Game ended click ok to play again");
-        
-        if(ne==true){
-            
-            location.reload();
-        }
-    } 
+     
 }
 
 function slide(){
