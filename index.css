@@ -42,7 +42,7 @@ background-color: rgb(142, 196, 212);
     border: 0px solid white;
     border-radius:12.5px;
     background-color: rgb(0, 82, 0);
-    transform: translate(0px,0px);
+    transform: translate(0px,-2px);
     translate: 0.5s;
 }
 .autocount-button-off{
@@ -142,7 +142,7 @@ background-color: rgb(142, 196, 212);
         border: 0px solid white;
         border-radius:12.5px;
         background-color: rgb(0, 82, 0);
-        transform: translate(0px,2px);
+        transform: translate(2px,2px);
         translate: 0.5s;
     }
     .autocount-button-off{
